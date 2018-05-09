@@ -1,0 +1,39 @@
+.header{
+	margin-right: 100px;
+	margin-left: 200px;
+	margin-top: 40px;
+
+}
+
+.header img{
+	width: 80px;
+	display: inline-block;
+
+}
+h1{
+	display: inline-block;
+	position: relative;
+	bottom: 32px;
+	margin-left: 15px;
+}
+.navi{
+	float: right;
+}
+.navi ul li{
+	display: inline;
+	padding: 20px;
+}
+.main{
+	background-color: #EEEEEE;
+	margin:auto;
+	height: 510px;
+}
+.center{
+	width: 500px;
+	height: 450px;
+	margin: auto;
+	background-color: white;
+	position: relative;
+	top: 30px;
+
+}
