@@ -7,24 +7,45 @@
 </head>
 <body>
 	<div class="header">
-		<img src="../images/logo.png">
-		<h1>猿计划</h1>
-		<div class="navi">
-			<ul>
-				<li>首页</li>
-				<li>知识体系</li>
-				<li>话题</li>
-				<li>博客</li>
-				<li>题目</li>
-			</ul>
+		<div class="headbox">
+			<img src="../images/logo.png">
+			<h1>猿计划</h1>
+			<div class="navi">
+				<ul>
+					<li>首页</li>
+					<li>知识体系</li>
+					<li>话题</li>
+					<li>博客</li>
+					<li>题目</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="main">
 		<div class="center">
-			
+			<h2>欢迎来到猿计划</h2>
+			<form class="login">
+			<div class="logbox">
+				<div class="icon">
+					<img src="../images/用户.png">
+				</div>
+				<input type="text" placeholder="请输入登录手机号" class="box">
+			</div>
+			<div class="logbox">
+				<div class="icon">
+					<img src="../images/密码.png">
+				</div>
+				<input type="password" placeholder="6-16位密码,区分大小写,不能使用空格" class="box">
+			</div>
+			<div class="footer">
+				<input type="checkbox" id="autoLog">
+				<label for="autoLog">下次自动登录</label>
+				<a href="#" class="fp">忘记密码？</a>
+				<a href="#" class="reg">立即注册</a>
+			</div>
+			<input type="button" class="button"value="登录">
+			</form>
 		</div>
-		
-
 	</div>
 </body>
 </html>
