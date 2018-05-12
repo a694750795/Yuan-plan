@@ -5,7 +5,6 @@ $(function (){
 		$(this).parent().css("border-color","#999999");
 	});
 	$("#btn").click(function(e){
-		//console.log(e);
 		$.post("http://www.ftusix.com/static/data/login.php",{
 			mobile:$("#mobile").val(),
 			pwd:$("#pwd").val()
