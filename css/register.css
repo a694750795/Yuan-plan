@@ -50,7 +50,7 @@ h1{
 	top: 40px;
 	color: #BBBBBB;
 	border-bottom: 2px solid #BBBBBB;
-	margin:80px;
+	margin:80px 80px 60px 80px;
 	text-align: center;
 	padding-bottom: 10px;
 }
@@ -109,4 +109,18 @@ h1{
 #btn{
 	background-color: #E03636;
 	color: white;
+}
+.tip{
+	width: 300px;
+	height: 40px;
+	margin-left: 100px;
+	border-radius: 8px;
+	background-color: #40E0D0;
+	text-align: center;
+	display: none;
+}
+.tip span{
+	color: white;
+	position: relative;
+	top: 25%;
 }
