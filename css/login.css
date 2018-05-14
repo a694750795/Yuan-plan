@@ -51,7 +51,7 @@ h1{
 	color: #BBBBBB;
 	border-bottom: 2px solid #BBBBBB;
 	margin: 80px;
-	margin-bottom:110px; 
+	margin-bottom:90px; 
 	text-align: center;
 	padding-bottom: 10px;
 }
@@ -103,4 +103,18 @@ h1{
 	margin:25px 80px 25px 80px;
 	color: white;
 	font-size: 18px;
+}
+.tip{
+	width: 300px;
+	height: 40px;
+	margin-left: 100px;
+	border-radius: 8px;
+	background-color: #40E0D0;
+	text-align: center;
+	display: none;
+}
+.tip span{
+	color: white;
+	position: relative;
+	top: 25%;
 }
