@@ -27,12 +27,12 @@ $(function (){
 			},
 			dataType:"text",
 			error:function(XMLHttpRequest,textStatus){
-				alert(textStatus);
+				console.log(textStatus);
 
 			},
 			success:function(data,textStatus){
 
-				alert(data);
+				console.log(textStatus);
 
 			}
 
