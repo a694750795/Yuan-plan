@@ -1,0 +1,85 @@
+body{
+	margin: 0px;
+}
+.header{
+	height: 70px;
+	width: auto;
+	border-bottom: solid 1px #D5D5D5;
+	background-color: #FAFAFA;
+}
+.center{
+	margin-top: 20px;
+	position: relative;
+
+}
+.side{
+	width: 300px;
+	height: 500px;
+	border-right: solid 1px #BABABA;
+	display: inline-block;
+}
+.side a{
+	text-decoration: none;
+	color: black;
+}
+.main{
+	display: inline-block;
+	height: 500px;
+	margin-left: 20px;
+	position: absolute;
+	top: 0px;
+}
+.mine{
+	margin-left: 150px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: solid 1px #BABABA;
+	width: 120px;
+	text-align: center;
+	font-size: 15px;
+
+}
+#myMes{
+	color: #EA0F2D;
+}
+.main p{
+	width: 800px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px black;
+
+} 
+.personalMes{
+	height: 80px;
+	width: 800px;
+	border-bottom: solid 1px #BABABA;
+}
+#submit{
+	height: 30px;
+	width: 100px;
+	background-color: #EA0F2D;
+	border:#EA0F2D;
+	border-radius: 8px;
+	margin: 10px;
+	margin-top: 20px;
+	color: white;
+}
+#changeImage img{
+	width: 70px;
+	
+}
+#changeImage a{
+	position: relative;
+	bottom: 25px;
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+}
+.personalMes h4{
+	font-size: 15px;
+	margin-top: 30px;
+	display: inline-block;
+
+}
+.personalMes span{
+	margin-left: 50px;
+}

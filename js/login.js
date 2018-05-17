@@ -8,6 +8,11 @@ $(function (){
 
 
 	$("#btn").click(function(e){
+		var obj={};
+		obj["mobile"]=$("#mobile").val();
+		obj["pwd"]=$("#pwd").val();
+		jsons=JSON.stringify(obj);
+
 		if ($("#mobile").val()=='') {
 			$("#empho").fadeIn('slow');
 			setTimeout(function(){
@@ -19,20 +24,21 @@ $(function (){
 				$("#empwd").fadeOut("slow");},2000);
 		}else{
 			$.ajax({
+			contentType:"application/json",
 			type:"POST",
 			url:"http://www.ftusix.com/static/data/login.php",
-			data:{
-				mobile:$("#mobile").val(),
-				pwd:$("#pwd").val()
-			},
-			dataType:"text",
+			data:jsons,
+			dataType:"json",
 			error:function(XMLHttpRequest,textStatus){
 				console.log(textStatus);
 
 			},
 			success:function(data,textStatus){
 
-				console.log(textStatus);
+				console.log(data);
+				if(data.status==1){
+					window.location.href="mine.html?mobile="+data.data[0].mobile;
+				}
 
 			}
 
@@ -40,18 +46,7 @@ $(function (){
 
 		}
 
-
-
-
-		
-
-
-		/*$.post("http://www.ftusix.com/static/data/login.php",{
-			mobile:$("#mobile").val(),
-			pwd:$("#pwd").val()
-		},function(data,textStatus){
-			console.log(data);
-		})*/
+	
 
 	})
 });
