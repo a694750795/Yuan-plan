@@ -28,6 +28,7 @@ h1{
 }
 .navi ul li a{
 	text-decoration:none;
+	color: black;
 }
 .main{
 	background-color: #EEEEEE;
@@ -90,6 +91,7 @@ h1{
 .fp{
 	margin-left: 65px;
 	text-decoration:none;
+	color: black;
 }
 .reg{
 	margin-left: 5px;
