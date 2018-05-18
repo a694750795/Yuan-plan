@@ -1,44 +1,3 @@
-body{
-	margin: 0px;
-}
-.header{
-	height: 70px;
-	width: auto;
-	border-bottom: solid 1px #D5D5D5;
-	background-color: #FAFAFA;
-}
-.center{
-	margin-top: 20px;
-	position: relative;
-
-}
-.side{
-	width: 300px;
-	height: 500px;
-	border-right: solid 1px #BABABA;
-	display: inline-block;
-}
-.side a{
-	text-decoration: none;
-	color: black;
-}
-.main{
-	display: inline-block;
-	height: 500px;
-	margin-left: 20px;
-	position: absolute;
-	top: 0px;
-}
-.mine{
-	margin-left: 150px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	border-bottom: solid 1px #BABABA;
-	width: 120px;
-	text-align: center;
-	font-size: 15px;
-
-}
 #myMes{
 	color: #EA0F2D;
 }
@@ -82,4 +41,15 @@ body{
 }
 .personalMes span{
 	margin-left: 50px;
+}
+#nickName input{
+	margin-left: 90px;
+	height: 30px;
+	width: 200px;
+	border:solid #BFCBD9 1px;
+	border-radius: 4px;
+}
+#inputSex{
+	display: inline-block;
+	margin-left: 90px;
 }

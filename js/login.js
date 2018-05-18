@@ -37,7 +37,7 @@ $(function (){
 
 				console.log(data);
 				if(data.status==1){
-					window.location.href="mine.html?mobile="+data.data[0].mobile;
+					window.location.href="user/userInfo.html?mobile="+data.data[0].mobile+"&nick_name="+data.data[0].nick_name+"&sex="+data.data[0].sex;
 				}
 
 			}
