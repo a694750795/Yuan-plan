@@ -37,7 +37,10 @@ $(function (){
 
 				console.log(data);
 				if(data.status==1){
-					window.location.href="user/userInfo.html?mobile="+data.data[0].mobile+"&nick_name="+data.data[0].nick_name+"&sex="+data.data[0].sex;
+					window.location.href="user/userInfo.html";
+					setCookie('mobile',data.data[0].mobile);
+					setCookie('nick_name',data.data[0].nick_name);
+					setCookie('sex',data.data[0].sex);
 				}
 
 			}
@@ -48,5 +51,9 @@ $(function (){
 
 	
 
-	})
+	});
+	function setCookie(c_name,value)
+		{
+			document.cookie=c_name+ "=" +escape(value);
+		}
 });
