@@ -25,10 +25,14 @@ $(function (){
 			$("#diff").fadeIn('slow');
 			setTimeout(function(){
 				$("#diff").fadeOut("slow");},2000);
-		}
-		else{
+		}else if($("#put").val()!=code){
+			$("#wrcode").fadeIn('slow');
+			setTimeout(function(){
+				$("#wrcode").fadeOut("slow");},2000);
+		}else{
 			$.post("http://www.ftusix.com/static/data/register.php",infos,function(data,textStatus){
 				console.log(data);
+				window.location.href="login.html";
 			})
 			
 		}
@@ -46,6 +50,7 @@ $(function (){
 			},
 			success:function(data,textStatus){
 				console.log(data);
+				code=data.data.code;
 			}
 
 		})

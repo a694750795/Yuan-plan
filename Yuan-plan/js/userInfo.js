@@ -1,16 +1,4 @@
 $(function(){
-        function getCookie(c_name){
-            if (document.cookie.length>0){
-              c_start=document.cookie.indexOf(c_name + "=");
-              if (c_start!=-1){ 
-                c_start=c_start + c_name.length+1 ;
-                c_end=document.cookie.indexOf(";",c_start);
-                if (c_end==-1) c_end=document.cookie.length;
-                return unescape(document.cookie.substring(c_start,c_end));
-                } 
-            }
-            return "";
-        }
         var mobile=getCookie('mobile');
         var nick_name=getCookie('nick_name');
         var sex=getCookie('sex');
@@ -29,6 +17,13 @@ $(function(){
             $("#inputSex").append($t_girl);
             $("#inputSex").append($girl);
         };
+
+        $("#nickName input").focus(function(){
+            $(this).css("border-color","#20A0FF");
+        }).blur(function(){
+            $(this).css("border-color","#BFCBD9");
+
+        })
 
 
 

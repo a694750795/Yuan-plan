@@ -23,13 +23,34 @@
 			
 		</div>
 		<div class="main">
+			<p class="changepwd">修改密码</p>
+			<form>
+			<div id="mobile" class="personalMes">
+				<h4>手机号:</h4>
+			</div>
+			<div id="newpwd" class="personalMes">
+				<h4>新密码:</h4>
+				<input type="text" name="newpwd" class="inputMes" placeholder="请输入新密码">
+			</div>
+			<div id="ensurepwd" class="personalMes">
+				<h4>确认密码:</h4> 
+				<input type="text" name="ensurepwd" class="inputMes" placeholder="请再次输入密码">
+			</div>
+			<div id="code" class="personalMes">
+				<h4>验证码:</h4>
+				<input type="text" name="code" class="inputMes" placeholder="请输入验证码" id="incode">
+				<input type="button" name="getcode" id="getcode" value="获取验证码">
+				
+			</div>
+			<input type="submit" value="提交" id="submit">
+			</form>
 			
 			
 
 		</div>
 		
 	</div>
-
+	<script type="text/javascript" src="../../js/getCookie.js"></script>
 	<script type="text/javascript" src="../../js/resetpwd.js"></script>
 
 </body>
