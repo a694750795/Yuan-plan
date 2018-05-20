@@ -37,10 +37,18 @@ $(function (){
 
 				console.log(data);
 				if(data.status==1){
+					if ($("#autoLog").is(":checked")) {
+						setCookie('mobile',data.data[0].mobile,7);
+						setCookie('nick_name',data.data[0].nick_name,7);
+						setCookie('sex',data.data[0].sex,7);
+						
+					}else{
+						setCookie('mobile',data.data[0].mobile);
+						setCookie('nick_name',data.data[0].nick_name);
+						setCookie('sex',data.data[0].sex);
+						
+					}
 					window.location.href="user/userInfo.html";
-					setCookie('mobile',data.data[0].mobile,7);
-					setCookie('nick_name',data.data[0].nick_name,7);
-					setCookie('sex',data.data[0].sex,7);
 				}
 
 			}
