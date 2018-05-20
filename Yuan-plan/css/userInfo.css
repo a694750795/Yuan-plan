@@ -53,3 +53,20 @@
 	display: inline-block;
 	margin-left: 90px;
 }
+#updateSuc{
+	position: relative;
+	margin:auto;
+	top: 28px;
+	width: 150px;
+	height: 40px;
+	border:solid 1px #40E0D0; 
+	text-align: center;
+	background-color: #40E0D0;
+	border-radius: 5px;
+	display: none;
+}
+#updateSuc span{
+	position: relative;
+	top: 8px;
+	color: white;
+}

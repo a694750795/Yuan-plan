@@ -41,12 +41,13 @@ $(function (){
 						setCookie('mobile',data.data[0].mobile,7);
 						setCookie('nick_name',data.data[0].nick_name,7);
 						setCookie('sex',data.data[0].sex,7);
+						setCookie('token',data.data[0].token,7);
 						
 					}else{
 						setCookie('mobile',data.data[0].mobile);
 						setCookie('nick_name',data.data[0].nick_name);
 						setCookie('sex',data.data[0].sex);
-						
+						setCookie('token',data.data[0].token);
 					}
 					window.location.href="user/userInfo.html";
 				}
